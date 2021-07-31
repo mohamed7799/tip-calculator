@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        spli <br />
+        tter
+      </h1>
+      <section class="main-component">
+        <section class="inputs">
+          <div class="bill">
+            <label>Bill</label>
+            <input id="bill-js" placeholder="0" type="text" />
+          </div>
+          <div class="tip">
+            <label>Select Tip %</label>
+            <ul id="tips-js">
+              <li class="tip_item-i">5%</li>
+              <li class="tip_item-i">10%</li>
+              <li class="tip_item-i">15%</li>
+              <li class="tip_item-i">25%</li>
+              <li class="tip_item-i">50%</li>
+              <input
+                class="tip_item-input"
+                id="custom_tip-js"
+                placeholder="Custom"
+                type="text"
+              />
+            </ul>
+          </div>
+          <div class="num-people">
+            <label for="numberOfPeople">Number Of People </label>
+
+            <input id="num-js" placeholder="0" type="text" />
+          </div>
+        </section>
+        <section class="screen">
+          <div class="output">
+            <p class="output__title">
+              Tip Amount <br />
+              <span>/ person</span>
+            </p>
+            <p id="tip_out-js" class="output__value"></p>
+          </div>
+          <div class="output">
+            <p class="output__title">
+              Total <br />
+              <span>/ person</span>
+            </p>
+            <p id="total_out-js" class="output__value"></p>
+          </div>
+          <button id="reset_btn-js" class="reset">Reset</button>
+        </section>
+      </section>
+    </main>
+    <script src="code.js"></script>
+  </body>
+</html>
