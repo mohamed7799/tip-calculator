@@ -16,6 +16,7 @@ $White: hsl(0, 0%, 100%);
 }
 
 body {
+  overflow: hidden;
   min-height: 100vh;
   display: flex;
   background-color: rgb(177, 230, 230);
@@ -71,13 +72,10 @@ h1 {
   background-color: $White;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 3px 3px rgba(128, 128, 128, 0.486);
+  gap: 2rem;
   & > * {
     flex: 1;
   }
-}
-
-.inputs {
-  margin-right: 2rem;
 }
 
 .bill,
@@ -102,7 +100,7 @@ h1 {
 
 .tip ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
   grid-template-rows: repeat(2, 40px);
   grid-gap: 1rem;
   & li {
@@ -188,13 +186,11 @@ button {
 
 @media screen and (max-width: 800px) {
   main {
-    width: 100%;
+    width: 95%;
   }
 
   .main-component {
     flex-direction: column;
-  }
-  .screen {
-    margin-top: 4rem;
+    padding: 1rem;
   }
 }
